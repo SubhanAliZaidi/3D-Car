@@ -1,0 +1,98 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #202020;
+	background-color: #272727;
+	background-color: #222222;
+	background-color: #0b0b0b;
+	position: relative;
+}
+
+.topheading {
+	background-color: transparent;
+	color: white;
+	position: absolute;
+	top: 8%;
+	z-index: -1;
+	right: 50%;
+	transform: translate(50%);
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+	font-size: 4rem;
+	font-weight: 500;
+	letter-spacing: 30px;
+}
+
+canvas {
+	z-index: 5;
+}
+
+.specs {
+	color: white;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 350px;
+	aspect-ratio: 16/9;
+	background-color: transparent;
+	z-index: 6;
+	padding: 20px;
+	border: 1px solid;
+	border-color: white transparent transparent white;
+	border-radius: 15px 0px 0px 0px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	backdrop-filter: blur(10px);
+}
+
+.specs h1 {
+	margin-bottom: 10px;
+	font-weight: 500;
+}
+
+.specs ul {
+	list-style-position: inside;
+}
+
+.specs button {
+	padding: 10px 20px;
+	background-color: white;
+	color: black;
+	font-size: 0.9rem;
+	text-transform: uppercase;
+	font-weight: 600;
+	border-radius: 6px;
+	border: none;
+	margin-top: 15px;
+	align-self: center;
+}
+.leftbtn,
+.rightbtn {
+	position: absolute;
+	z-index: 15;
+	top: 40%;
+    background: transparent;
+    border: none;
+    padding: 20px;
+}
+
+.rightbtn {
+	transform: translate(-50%, -50%);
+	right: 5px;
+}
+
+.leftbtn {
+	transform: translate(50%, -50%);
+	left: 5px;
+}
+
+.leftbtn > img,
+.rightbtn > img{
+    width: 25px;
+}
