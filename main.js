@@ -9,7 +9,7 @@ const secondurl = new URL('./textures/fordmustang.glb', import.meta.url);
 
 // Scene
 const scene = new THREE.Scene();
-scene.fog = new THREE.Fog(0x272727, 5, 15);
+scene.fog = new THREE.Fog(0x111111, 5, 15);
 
 // Camera
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 100);
@@ -98,7 +98,7 @@ spotLight.penumbra = 0.1;
 // Plane
 const PlaneGeometry = new THREE.CircleGeometry(100, 32);
 const PlaneMaterial = new THREE.MeshStandardMaterial({
-  color: 0x272727, side: THREE.DoubleSide,
+  color: 0x1b1b1b, side: THREE.DoubleSide,
 });
 const Plane = new THREE.Mesh(PlaneGeometry, PlaneMaterial);
 Plane.receiveShadow = true;

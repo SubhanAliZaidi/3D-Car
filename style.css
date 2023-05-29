@@ -6,9 +6,10 @@
 
 body {
 	background-color: #202020;
-	background-color: #222222;
 	background-color: #0b0b0b;
 	background-color: #272727;
+	background-color: #222222;
+	background-color: #111111;
 	position: relative;
 }
 
@@ -22,7 +23,7 @@ body {
 	transform: translate(50%);
 	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
 		"Lucida Sans", Arial, sans-serif;
-	font-size: 4rem;
+	font-size: clamp(3rem , 5vw, 4rem);
 	font-weight: 500;
 	letter-spacing: 30px;
 }
@@ -95,4 +96,20 @@ canvas {
 .leftbtn > img,
 .rightbtn > img{
     width: 25px;
+}
+
+@media (max-width:600px){
+  .topheading{
+    letter-spacing: 15px;
+  }
+
+  .rightbtn {
+    transform: translate(0%, -50%);
+    right: 0px;
+  }
+  
+  .leftbtn {
+    transform: translate(0%, -50%);
+    left: 0px;
+  }
 }
